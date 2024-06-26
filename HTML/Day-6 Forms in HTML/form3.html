@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 150px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+     <fieldset disabled>
+        <legend align="center">Login Form</legend>
+            <label for="fname"
+            >Name
+            <input
+            type="text"
+            name="user-name"
+            placeholder="Enter your Fullname"
+            required
+            id="fname"
+            />
+        </label>
+        <br><br>
+
+        <label for="email"
+            >Email
+            <input
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+            required
+            id="email"
+            />
+        </label>
+        <br /><br />
+
+        <label for="pass">
+            Password
+            <input
+            type="password"
+            name="user-password"
+            placeholder="at least 6 characters"
+            required
+            id="pass"
+            />
+        </label>
+        <br /><br />
+
+        <input type="submit" value="Login" />
+        <input type="reset" value="Cancel" />
+     </fieldset>
+    </form>
+  </body>
+</html>

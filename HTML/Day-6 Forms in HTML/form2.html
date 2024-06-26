@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute of Input Tag</title>
+    <style>
+        sup{
+            color: red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" autocomplete="off">
+        Name <input type="text" name="user-name" placeholder="Enter your name" autofocus size="30" minlength="2" maxlength="16" ><br><br>
+
+        Mob <input type="tel" name="mobile-number" placeholder="+91-xxxxxxxxxx" minlength="10" maxlength="10" ><br><br>
+
+        Email<sup>*</sup> <input type="email" name="user-email" placeholder="Enter your email" required><br><br>
+
+        Password<sup>*</sup> <input type="password" name="user-password" placeholder="at least 6 characters" required><br><br>
+
+        <input type="number" min="0" max="100" step="10"> <br><br>
+
+        <input type="range" min="0" max="100" step="10"><br><br>
+
+        <input type="submit" value="Create Your Account">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>

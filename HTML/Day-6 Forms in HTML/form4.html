@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3
+    , initial-scale=1.0">
+    <title>List inside Form</title>
+    <style>
+        fieldset{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend align="center">Login Form</legend>
+            <label for="fname">Name
+                <input type="text" name="userName" id="fname" required>
+            </label>
+            <br><br>
+            <label for="email">Email
+                <input type="email" name="userEmail" id="email" required>
+            </label>
+            <br><br>
+            <label for="pass">Password
+                <input type="password" name="userPassword" id="pass">
+            </label>
+            <br><br>
+
+            <label for="shift">Working Details <br>
+                <select name="userShift" id="shift">                    
+                    <option value="" disabled selected>--Select Your Shift--</option>
+                    <option value="6AM-2PM">Morning Shift</option>
+                    <option value="2PM-10PM">Evening Shift</option>
+                    <option value="10PM-6AM">Night Shift</option>
+                    <option value="Chole Bhature">General Shift</option>
+                </select>
+            </label>
+
+
+
+            <br><br>
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+        </fieldset>
+    </form>
+</body>
+</html>
