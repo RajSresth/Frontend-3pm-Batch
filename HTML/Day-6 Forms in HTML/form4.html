@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=3
-    , initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=3
+    , initial-scale=1.0"
+    />
     <title>List inside Form</title>
     <style>
-        fieldset{
-            width: 150px;
-        }
+      fieldset {
+        width: 150px;
+      }
+      textarea {
+        resize: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <form action="#">
-        <fieldset>
-            <legend align="center">Login Form</legend>
-            <label for="fname">Name
-                <input type="text" name="userName" id="fname" required>
-            </label>
-            <br><br>
-            <label for="email">Email
-                <input type="email" name="userEmail" id="email" required>
-            </label>
-            <br><br>
-            <label for="pass">Password
-                <input type="password" name="userPassword" id="pass">
-            </label>
-            <br><br>
+      <fieldset>
+        <legend align="center">Login Form</legend>
+        <label for="fname"
+          >Name
+          <input type="text" name="userName" id="fname" required />
+        </label>
+        <br /><br />
+        <label for="email"
+          >Email
+          <input type="email" name="userEmail" id="email" required />
+        </label>
+        <br /><br />
+        <label for="pass"
+          >Password
+          <input type="password" name="userPassword" id="pass" />
+        </label>
+        <br /><br />
 
-            <label for="shift">Working Details <br>
-                <select name="userShift" id="shift">                    
-                    <option value="" disabled selected>--Select Your Shift--</option>
-                    <option value="6AM-2PM">Morning Shift</option>
-                    <option value="2PM-10PM">Evening Shift</option>
-                    <option value="10PM-6AM">Night Shift</option>
-                    <option value="Chole Bhature">General Shift</option>
-                </select>
-            </label>
+        <label for="shift"
+          >Working Details <br />
+          <select name="userShift" id="shift">
+            <option value="" disabled selected>--Select Your Shift--</option>
+            <option value="6AM-2PM">Morning Shift</option>
+            <option value="2PM-10PM">Evening Shift</option>
+            <option value="10PM-6AM">Night Shift</option>
+            <option value="Chole Bhature">General Shift</option>
+          </select>
+        </label>
+        <br /><br />
 
+        <label for="state">State Name</label>
+        <input
+          type="text"
+          name="state-name"
+          id="state"
+          required
+          placeholder="Enter state name"
+          list="select-field"
+        />
 
+        <datalist id="select-field">
+          <option value="Delhi"></option>
+          <option value="Uttar Pradesh"></option>
+          <option value="Uttarakhand"></option>
+          <option value="Haryana"></option>
+          <option value="Himachal Pradesh"></option>
+          <option value="Maharashtra"></option>
+          <option value="Madhya Pradesh"></option>
+          <option value="Pakistan"></option>
+        </datalist>
+        <br /><br />
 
-            <br><br>
-            <input type="submit" value="Login">
-            <input type="reset" value="Cancel">
-        </fieldset>
+        <label for="feed">Tell your experience</label><br />
+        <textarea
+          name="user-feedback"
+          id="feed"
+          rows="8"
+          cols="25"
+          placeholder="Write something...!"
+          required
+          minlength="200"
+          maxlength="700"
+        ></textarea>
+
+        <br /><br />
+        <input type="submit" value="Login" />
+        <input type="reset" value="Cancel" />
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+        <button type="menu">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+            alt="Hamburger Home icon"
+            hegith="70px"
+            width="70px"
+            loading="lazy"
+          />
+        </button>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
