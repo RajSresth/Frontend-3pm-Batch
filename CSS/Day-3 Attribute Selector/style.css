@@ -1,0 +1,39 @@
+/* div[title]{
+    color: blue;
+} */
+
+
+/* Tagname[attribut="value"]
+
+ div[title="div2"]{
+    color: magenta;
+}
+
+div[title="div1"]{
+    color: red;
+} */
+
+
+/* Tagname[attibute^="prefix Value"] */
+/* div[title^="div1"]{
+    color: mediumaquamarine;
+} */
+
+/* Tagname[attribute$="suffix value"] */
+/* div[title$="container-2"]{
+    background-color: purple;
+    color: white;
+} */
+
+/* tagname[attribute~="middle value"] */
+
+/* div[title~="flex2"]{
+    color: orangered;
+} */
+
+div[title*="div1"]{
+    color: magenta;
+}
+div[title*="flex2"]{
+    color: orangered;
+}

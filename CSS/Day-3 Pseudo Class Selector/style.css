@@ -1,0 +1,38 @@
+/* Not visited state 
+a:link{
+    color: rgb(117, 172, 9);
+}
+
+active state 
+a:active{
+    color: aqua;
+}
+
+ Visited state 
+a:visited{
+    color: coral;
+}
+*/
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    background-color: rgb(40, 128, 206);
+    color:white;
+    text-decoration: none;
+    padding: 15px 45px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    background-color: black;
+    scale: 1.15;
+}
+
+

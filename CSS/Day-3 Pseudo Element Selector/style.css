@@ -1,0 +1,95 @@
+/* Topic: ::first-letter 
+ span{
+    color: white;
+    font-style: italic;
+    display: inline-block;
+}
+
+span::first-letter{
+    color: red;
+    font-size: 35px;
+} */
+
+/*Topic: ::first-line
+  body{
+    color: white;
+    background-color: black;
+ } 
+
+ p::first-line{
+    color: rgb(28, 191, 28);
+    font-size: 22px;
+    font-style: italic;
+ }
+*/
+
+/* Task
+ span{
+    display: inline-block;
+ }
+ span::first-letter{
+    color: red;
+    font-size: 25px;
+ }
+ */
+
+
+/* Topic:- ::selection
+*::selection{
+    background-color: green;
+    color: white;
+ } */
+ 
+
+ 
+
+/* Topic: ::marker selector
+
+
+ul>li::marker{
+    content: '😋 ';
+} 
+
+ol>li:nth-of-type(even)::marker{
+    content: '😍 ';
+}
+
+ol>li:nth-of-type(odd)::marker{
+    content: '😒 ';
+}
+
+ol>li:nth-of-type(9)::marker,ol>li:nth-of-type(12)::marker{
+    content: '🤢 ';
+}
+
+ol>li:nth-of-type(12)::marker{
+    content: '🤢 ';
+}
+
+
+ol>li:nth-of-type(11)::marker{
+    content: '🤮 ';
+}
+
+*/
+
+
+div::before{
+    content: 'Mahendra ';
+    color: orange;
+}
+
+div::after{
+    content: ' Dhoni';
+    color: rgb(2, 188, 2);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 125px;
+ }
