@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 125px;
+}
+
+div{
+    text-shadow: -350px 0px 15px orange,
+                  350px 0px 15px  green,
+                  0px  -200px 0px orange,
+                  0px  200px 0px green,
+                  400px 200px 0px magenta;
+}

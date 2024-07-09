@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.section-1{
+    background-image: url('https://www.tourmyindia.com/socialimg/ladakh-winter-season.jpg');
+}
+
+.section-3{
+    background-image: url('https://w0.peakpx.com/wallpaper/67/341/HD-wallpaper-royal-enfield-bike-dirt-ladakh-leh-moterbike-re-road-trip.jpg');
+}
+
+.section-5{
+    background-image: url('https://www.sikkimtourismindia.com/uploads/sikkim-3.JPG');
+}
+.section-6{
+    background-image: url('https://bongbackpackers.com/wp-content/uploads/2019/07/darjeeling-1.jpg');
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

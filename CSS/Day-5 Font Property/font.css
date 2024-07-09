@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* @font-face {
+    font-family:'chombu' ;
+    src: url('./Fonts/Roboto/Roboto-Black.ttf');
+} */
+
+h1{
+    font-size: 55px;
+    font-weight:500;
+    font-family: "Dancing Script", cursive;
+    font-style:italic; 
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+span{
+    color: red;
+    font-size: 25px;
+    font-style: oblique 10deg;
+    font-family: "Dancing Script", cursive;
+
+}

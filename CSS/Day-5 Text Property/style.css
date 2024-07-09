@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#box{
+    width: 1050px;
+    height: 650px;
+    background-color:#313131;
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    font-size: 55px;
+    color: white;
+    text-align: center;  
+    text-transform: capitalize;
+    text-decoration:2px solid underline greenyellow;
+    text-underline-offset: 18px;
+    letter-spacing: 8px;
+    word-spacing: 20px;
+}
+p{
+    /* background-color: lightcoral; */
+    color: white;
+    font-size: 28px;
+    padding: 20px 70px;
+    text-align: justify;
+    line-height: 50px;
+}
+
+a{
+    color: white;
+    font-size: 40px;    
+    /* text-decoration:4px line-through red; */
+    text-decoration: none;
+}
