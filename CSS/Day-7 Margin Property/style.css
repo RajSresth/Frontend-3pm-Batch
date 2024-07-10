@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    width: 350px;
+    height: 450px;
+    margin:150px auto 0px;
+    box-shadow: 0px 0px 20px 2px rgb(163, 161, 161);
+    padding: 5px;
+}
+.card>.frame{
+    width: 100%;
+    height: 70%;
+    background-image: url('https://imagevars.gulfnews.com/2022/10/03/Bollywood-star-Hrithik-Roshan-who-has-just-rolled-out-his-new-film--Vikram-Vedha-_1839d983b81_medium.jpg');
+    background-repeat: no-repeat;
+    background-size: 106% 100%;
+    background-position: top left;
+}
+.card h2{
+    text-align: center;
+    margin:15px 0px 30px;
+}
+.card>.button-container{
+    text-align: center;
+}
+.button-container>a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 12px 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.button-container>a:hover{
+    background-color: rgb(183, 7, 7);
+}
