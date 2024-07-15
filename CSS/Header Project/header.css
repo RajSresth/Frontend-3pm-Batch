@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(9, 110, 169);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 0.5px solid #fff; */
+}
+.logo{
+    font-size: 45px;
+}
+nav>a{
+    font-size: 27px;
+    text-decoration: none;
+}
+nav{
+    /* background-color: cyan; */
+    display: flex;
+    gap: 50px;
+}
+
+section{
+    width: 100%;  /*100vw*/
+    height:calc(100vh - 100px) ;
+    background-color: black;
+    display: flex;
+}
+section .left{
+    width:45% ;
+    height: 100%;
+    /* background-color: mediumaquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .right{
+    width: 55%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    background-image: url('https://www.travelandleisure.com/thmb/wdUcyBQyQ0wUVs4wLahp0iWgZhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/taj-mahal-agra-india-TAJ0217-9eab8f20d11d4391901867ed1ce222b8.jpg');
+    background-repeat: no-repeat;
+    background-size: 600px 380px;
+    background-position: center ;
+}
+
+article{
+    /* background-color: deeppink; */
+    width: 76%;
+    padding: 0px 20px;
+}
+.left  h2{    
+    font-size: 40px;
+}
+.left p{
+    font-size: 30px;
+    margin: 25px 0px;
+}
+.left button{
+    padding: 15px 75px;
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 253, 253, 0.412);
+}
+
