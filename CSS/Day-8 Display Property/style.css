@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;
+}
+.card{
+    width: 280px;
+    height: 360px;
+    text-align: center;
+    line-height: 360px;
+    font-size: 55px;
+    color: white;
+    display: inline-block;
+}
+.card-1{
+    background-color: magenta;
+}
+.card-2{
+    background-color: aqua;
+    color: black;
+    
+}
+.card-3{
+    background-color: tomato;
+}

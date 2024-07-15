@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;    
+}
+section{
+    width: 90%;
+    height: auto;
+    /* background-color: lightblue; */
+    border: 3px solid black;
+    margin:40px auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    padding: 20px;
+    
+}
+.card{
+    width: 330px;
+    height: 360px; 
+}
+.card-1 .profile{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin:20px auto;
+    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-4YbvE-R4dDvsyWHMCfRCfq1lA1PMs6kPweGsPGkPtgebbR0h');
+    background-size: 160% 100%;
+    background-repeat: no-repeat;
+    background-position:top  center ;
+}
+.card-2 .profile{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin:20px auto;
+    background-image: url('https://mrwallpaper.com/images/hd/k-g-f-2-rocky-red-suit-5t5boakujh3k6yep.jpg');
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+    background-position:top  center ;
+}
+.card-3 .profile{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin:20px auto;
+    background-image: url('https://www.sacnilk.com/image/bunnyimagenews.php?newsid=1000020294');
+    background-size: 160% 100%;
+    background-repeat: no-repeat;
+    background-position:top  center ;
+}
+.card-4 .profile{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin:20px auto;
+    background-image: url('https://wallpapers.com/images/featured/surya-hd-fef7dwlq90bme1pz.jpg');
+    background-size: 100% 108%;
+    background-repeat: no-repeat;
+    background-position:top center ;
+}
+.card-1{
+    background-color: lightcoral;
+}
+.card-2{
+    background-color: lightgreen;
+}
+.card-3{
+    background-color: tomato;
+}
+.card-4{
+    background-color: darkcyan;
+}
+h2{
+    text-align: center;
+}
