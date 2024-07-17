@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parent{
+    width: 1200px;
+    height: 650px;
+    border: 4px solid black;
+    background-color: aqua;
+    position: relative;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    color: white;
+    font-size: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
