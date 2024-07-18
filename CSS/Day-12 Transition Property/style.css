@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.card{
+    width: 380px;
+    height: 450px;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+}
+.frame{
+    width: 100%;
+    height: 100%;
+}
+.card-1 .frame{
+    background-image: url('https://www.financialexpress.com/wp-content/uploads/2023/04/Defender-130.jpg');
+    background-size: 200% 100%;
+    background-position: left -210px center;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .frame{
+    scale: 1.3;
+}
+.card .line{
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 0;
+    background-color:red;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .line{
+    width: 100%;
+}
+
+.card-2 .frame{
+    background-image: url('https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-103495932/103495932.jpg');
+    background-repeat: no-repeat;
+    background-size: 180% 100%;
+    background-position: left -150px center;
+    transition: all 0.5s ease-in-out;   
+}
+.card-3 .frame{
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*hxp31ZGIrInMEBUiz2ZdvA.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+    transition: all 0.5s ease-in-out;   
+}
+
+.card-1 .content{
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.447);
+    overflow: hidden;
+    position: absolute;
+    top: -480px;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+.card-1 .content h2{
+    font-size: 38px;
+    margin: 30px 40px;
+}
+.card-1 .content p{
+    margin: 30px 20px 60px;
+    font-size: 23px;
+    text-align: justify;
+    
+}
+.card-1 .content a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 20px;
+    padding: 13px 50px;
+    background-color: rgb(163, 4, 4);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card-1:hover .content{
+    top: 0;    
+}

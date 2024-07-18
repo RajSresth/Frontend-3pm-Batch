@@ -22,7 +22,7 @@ header{
     /* position: fixed; */
     position: sticky;
     top: 0px;
-    
+    backdrop-filter: blur(5px);
 }
 .header-container{
     width: 1200px;
@@ -55,7 +55,7 @@ article{
     padding: 40px 130px 70px; 
     background:linear-gradient( rgba(255, 255, 255, 0.937), rgba(255, 255, 255, 0.437));
     margin-bottom: 20px;
-    backdrop-filter: blur(10px);
+   
 }
 article h2{
     font-size: 55px;
