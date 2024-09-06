@@ -74,4 +74,55 @@ arr.sort(function(a,b){
 console.log(arr)
 */
 
+/*
+const arr=[1,2,3,4,5]   //[1,2,3,4,5]
+const output=[]
 
+arr.forEach((val,i,array)=>{
+    output.push(val**2);
+})
+
+const res=[]
+output.forEach(val=>res.push(Math.sqrt(val)))
+console.log(res) */
+
+/*
+const arr=[1,2,3,4,5]  //[1,8,27,64,125]
+
+arr.forEach((val,i,arrary)=>{
+    arrary[i]=Math.floor(val/10)
+})
+console.log(arr) */
+
+
+/* map(callback) method
+const arr=[1,2,3,4,5];
+const res=arr.map((val,i,array)=>{
+                    array[i]=val*10                    
+                })
+console.log(arr)
+console.log(res)
+*/
+
+/* filter(callback)
+const price=[100,200,300,400,500,600,700,800,900,1000]
+
+const res=price.filter((value,index,array)=>value>600)
+console.log(res) */
+
+
+const emp=[
+    {name:"Chombu",sal:25000},
+    {name:"Tinku",sal:21000},
+    {name:"Dinga",sal:18000},
+    {name:"Minku",sal:17000},
+    {name:"Amit",sal:27000}
+]
+const res=[]
+emp.filter(val=>{
+    if(val.sal<=21000)
+    {
+        res.push(val.name);
+    }
+})
+console.log(res)
