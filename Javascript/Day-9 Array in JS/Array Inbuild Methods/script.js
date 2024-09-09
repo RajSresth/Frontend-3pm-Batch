@@ -110,7 +110,7 @@ const price=[100,200,300,400,500,600,700,800,900,1000]
 const res=price.filter((value,index,array)=>value>600)
 console.log(res) */
 
-
+/*
 const emp=[
     {name:"Chombu",sal:25000},
     {name:"Tinku",sal:21000},
@@ -125,4 +125,46 @@ emp.filter(val=>{
         res.push(val.name);
     }
 })
+console.log(res) */
+
+/* Array.isArray(____)
+const a="Hii"
+const b={}
+const c=function (){};
+const d=[]
+let res;
+if(Array.isArray(d))
+{
+     res=confirm("Dark Mode Activate?")
+}
+*/
+
+/*
+const arr=[1,[2,3],4,[5,[6,7],8],9,10]
+const res=arr.flat()
 console.log(res)
+*/
+
+/* concat()
+const arr1=["sun","mon"]
+const arr2=["Tue","wed"]
+
+const res=arr1.concat(arr2)
+console.log(res)
+*/
+
+/* join()
+
+let arr1=["j","a","v","a","s","c","r","i","p","t"]
+const res=arr1.join("")
+console.log(res)
+*/
+
+/* Array.from()
+const str="javascript"
+const arr=Array.from(str)
+console.log(arr)
+*/
+
+
+
