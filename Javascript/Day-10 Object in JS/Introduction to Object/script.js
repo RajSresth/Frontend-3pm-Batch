@@ -24,6 +24,7 @@ const obj={
 }
 console.log(obj) */
 
+/*
 const p1="VK-18";
 const p2="CR-7";
 
@@ -31,5 +32,16 @@ const sports={
     p1:p1,
     p2
 }
+console.log(sports) */
 
-console.log(sports)
+/*
+let arr=[5,6,7,8,9]
+function nextInline(arr,item)
+{
+    arr.push(item)
+
+    return arr.shift();
+}
+
+const res=nextInline(arr,1)
+console.log(res) */
