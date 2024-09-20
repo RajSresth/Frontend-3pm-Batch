@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Js</title>
+</head>
+<body>
+    <h1 id="root">Hello World</h1>
+    <button onclick="changeText(event)">Click</button>
+
+    <script>
+        function changeText(event)
+        {
+            console.log(event)
+            const h1=document.getElementById("root")
+            h1.textContent="Jai Shree Ram..🙏"
+        }
+    </script>
+</body>
+</html>
