@@ -1,0 +1,27 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 5px;
+    background-color: rgb(12, 137, 174);
+    font-size: 28px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
