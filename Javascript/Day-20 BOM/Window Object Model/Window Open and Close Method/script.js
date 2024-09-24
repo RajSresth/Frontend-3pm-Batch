@@ -2,10 +2,10 @@
 // console.log(window.innerWidth)
 
 const btn1=document.getElementById("btn1")
-const btn2=document.getElementById("btn2")
-const btn3=document.getElementById("btn3")
+// const btn2=document.getElementById("btn2")
+// const btn3=document.getElementById("btn3")
 const btn4=document.getElementById("btn4")
-const windowName="chombu";
+let windowName;
 
 btn1.addEventListener("click",()=>{
     const url="https://open.spotify.com";
@@ -20,8 +20,9 @@ btn1.addEventListener("click",()=>{
     const top=Math.floor((window.innerHeight-height)/2)
     const left=Math.floor((window.innerWidth-width)/2);
 
-    window.open(url,windowName,`width=${width},height=${height},top=${top},left=${left},fullscreen=no`)
+    windowName=window.open(url,"chombu",`width=${width},height=${height},top=${top},left=${left},fullscreen=no`)
 })
+/*
 btn2.addEventListener("click",()=>{
     const url="https://wynk.in/music";
 
@@ -51,9 +52,9 @@ btn3.addEventListener("click",()=>{
     const left=Math.floor((window.innerWidth-width)/2);
 
     window.open(url,windowName,`width=${width},height=${height},top=${top},left=${left},fullscreen=no, resizable=no`)
-})
+}) */
 
 // close window
 btn4.addEventListener("click",()=>{
-    window.close(windowName)
+    windowName.close()
 })
