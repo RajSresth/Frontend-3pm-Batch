@@ -1,0 +1,42 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+code{
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 32px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+button{
+    position: absolute;
+    top: -43px;
+    right: 0;
+    padding: 12px 50px;
+    border: none;
+    outline: none;
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}

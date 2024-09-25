@@ -1,0 +1,5 @@
+console.log(window.screen)
+console.log(screen.width)
+console.log(screen.height)
+console.log(screen.top)
+console.log(screen.left)
