@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <pre class="block">
+    <button id="copy">Copy code</button>
+    <code id="code">
+        &lt;div onclick="handleButtonClick()"&gt;Hello World&lt;/div&gt;
+
+        &lt;script&gt;
+
+            function handleButtonClick()
+            {
+                const div=document.querySelector('div');
+                div.style.backgroundColor="red";
+            }
+
+        &lt;/script&gt;
+    </code>
+    </pre>
+    <script src="script.js"></script>
+</body>
+</html>
