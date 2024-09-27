@@ -28,7 +28,6 @@ body{
 }
 .block #code{
     font-size: 20px;
-
 }
 #copy{
     position: absolute;
@@ -42,7 +41,6 @@ body{
     background-color: #1e3a8a;
     cursor: pointer;
 }
-
 
 .overlay{
     position: absolute;

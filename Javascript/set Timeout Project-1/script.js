@@ -1,7 +1,6 @@
 const btn=document.getElementById("copy");
 const block=document.querySelector(".block")
 
-
 btn.addEventListener("click",()=>{
     const code=document.getElementById("code")
     const content=code.textContent;
