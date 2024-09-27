@@ -63,3 +63,37 @@ body{
     background-color: white;
     font-size: 18px;
 }
+
+
+/*styling for tooltip*/
+.tooltip{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #1e3a8a;
+    opacity: 0;
+    visibility: hidden;
+    border-radius:5px;
+    transition: all 0.2s;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%) rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    background-color:  #1e3a8a;
+}
+
+.block:hover .tooltip{
+visibility: visible;
+opacity: 1;
+top: -12.5%;
+}
