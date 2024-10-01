@@ -26,6 +26,9 @@ body{
     position: relative;
     padding-right: 70px;
 }
+.block:hover{
+    cursor: pointer;
+}
 .block #code{
     font-size: 20px;
 }
