@@ -1,0 +1,113 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+.block{
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.block .btn-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 5;
+    display: flex;  
+}
+.block .btn-container button{
+    padding: 12px 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #1d4ed8;
+    color: white;
+}
+
+.block #code{    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+#code:hover{
+    cursor: pointer;
+}
+
+.btn-container button:hover{
+    cursor: pointer;
+    background-color: #1e3a8a;
+}
+
+
+#code .tooltip{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#1e3a8a ;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+#code .tooltip::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color:#1e3a8a ;
+    left: 50%;
+    bottom: -5px;
+    transform:translateX(-50%) rotate(-45deg);
+}
+
+#code:hover .tooltip{
+    top: -50px;
+    opacity: 1;
+}
+
+#code .overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(132, 131, 131, 0.533);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+}
+
+#code .overlay .overlay-message{
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+}
