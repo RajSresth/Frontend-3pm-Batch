@@ -60,7 +60,7 @@ body{
 }
 
 
-#code .tooltip{
+#code+.tooltip{
     padding: 10px;
     border-radius: 5px;
     background-color:#1e3a8a ;
@@ -73,7 +73,7 @@ body{
     transition: 0.3s ease;
     opacity: 0;
 }
-#code .tooltip::after{
+#code+.tooltip::after{
     content: "";
     position: absolute;
     width: 15px;
@@ -84,7 +84,7 @@ body{
     transform:translateX(-50%) rotate(-45deg);
 }
 
-#code:hover .tooltip{
+#code:hover+.tooltip{
     top: -50px;
     opacity: 1;
 }

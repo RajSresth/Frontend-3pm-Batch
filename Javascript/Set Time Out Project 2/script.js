@@ -1,9 +1,9 @@
 // create a tool tip
-const code=document.getElementById("code")
+const block=document.querySelector(".block");
 const tooltip=document.createElement("div");
 tooltip.classList.add("tooltip");
 tooltip.textContent="Copy Code Snippet";
-code.appendChild(tooltip);
+block.appendChild(tooltip);
 
 const java=document.getElementById("java");
 const js=document.getElementById("js");
@@ -14,7 +14,6 @@ java.addEventListener("click",function (){
     this.style.backgroundColor=" #1e3a8a"
     js.style.backgroundColor="#1d4ed8"
     python.style.backgroundColor="#1d4ed8"
-    code.appendChild(tooltip);
 })
 
 js.addEventListener("click",function(){
@@ -22,7 +21,6 @@ js.addEventListener("click",function(){
     this.style.backgroundColor=" #1e3a8a"
     java.style.backgroundColor="#1d4ed8"
     python.style.backgroundColor="#1d4ed8"
-    code.appendChild(tooltip);
 })
 
 
@@ -31,7 +29,6 @@ python.addEventListener("click",function(){
     this.style.backgroundColor=" #1e3a8a"
     java.style.backgroundColor="#1d4ed8"
     js.style.backgroundColor="#1d4ed8"
-    code.appendChild(tooltip);
 })
 
 
@@ -63,5 +60,6 @@ code.addEventListener("click",function(){
         console.log("Error")
     })
 })
+
 
 
