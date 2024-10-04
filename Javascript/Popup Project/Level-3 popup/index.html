@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-03 Form Popup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">pixelPerfect</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Career</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to my Website!</h1>
+    </section>
+    <div class="overlay"></div>
+    <div class="myPopup">
+        <div class="cross" >
+            <span></span>
+            <span></span>
+        </div>
+        <div class="btn-container">
+            <button id="btn1">Login</button>
+            <button id="btn2">SingUp</button>
+        </div>
+        <form action="#" id="login-form" class="myForm">
+            <h2>Login Form</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter you email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="at least 6 characters" required>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+        <form action="#" id="singup-form" class="myForm">
+            <h2>Sign Up Form</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter you fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter you email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="at least 6 characters" required>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
