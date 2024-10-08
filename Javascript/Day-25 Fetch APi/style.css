@@ -1,0 +1,115 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    max-height: 100%;
+    background-color: lightgray;
+}
+section {
+    padding:10px 50px 50px;
+}
+section .btn-container{
+    text-align: center;
+}
+section .btn-container button{
+    padding: 12px 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+section .card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 0;
+    justify-content: space-between;
+    padding-block:30px 15px;
+}
+
+section .card-container .card{
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+section .card .profile{
+    width: 100%;
+    height: 80%;
+    background-color: orange;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section .card .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .card h3{
+    margin: 10px 0 5px;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    z-index: 999;
+    pointer-events: none;
+    display: none;
+}
+
+.popup{
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 1000;
+    opacity: 0;
+    transition:transform 0.3s ease,
+                opacity 0.3s ease;
+    box-shadow:0px 0px 12px rgba(0, 0, 0, 0.2) ;
+}
+.popup p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.popup button{
+    padding: 12px 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #1d4ed8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+div.popup.show{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
